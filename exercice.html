@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+function remplaceur(match, p1, p2, offset, s){
+	return [p1 + 'av' + p2];
+}
+
+var motfrancais = prompt("Entrez votre mot en francais pour qu'il apparaisse en javanais:");
+
+var motjavanais = motfrancais.replace(/([b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z]{1,1})([a|e|i|o|u|y]{1,1})/g, remplaceur);
+alert(motjavanais);
+
+
+</script>
+
+</html>
